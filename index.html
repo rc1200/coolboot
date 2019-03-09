@@ -13,7 +13,7 @@
   <body>
 
 
-
+  	
   	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   		<a class="navbar-brand" href="#">BootstrapYou</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,18 +23,18 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      	<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="cards.html">Cards</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="forms.html">Forms</a>
+          <a class="dropdown-item" href="modals.html">Modals</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
@@ -86,12 +86,47 @@
 		A simple warning alert—check it out!
 	</div>
 
+
+	<button type="button" class="btn btn-primary">Primary</button>
+	<button type="button" class="btn btn-secondary">Secondary</button>
+	<button type="button" class="btn btn-success">Success</button>
+	<button type="button" class="btn btn-danger">Danger</button>
+	<button type="button" class="btn btn-warning">Warning</button>
+	<button type="button" class="btn btn-info">Info</button>
+	<button type="button" class="btn btn-light">Light</button>
+	<button type="button" class="btn btn-dark">Dark</button>
+
+	<button type="button" class="btn btn-link">Link</button>
+
+	<button type="button" class="btn btn-outline-primary">Primary</button>
+	<button type="button" class="btn btn-outline-secondary">Secondary</button>
+
+	<button type="button" class="btn btn-primary btn-lg">Large button</button>
+	<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+
+	<button type="button" class="btn btn-danger">Regular Size</button>
+	<button type="button" class="btn btn-primary btn-sm">Small button</button>
+	<button type="button" class="btn btn-info btn-sm">Small button</button>
+
+	<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+	<div class="container">
+		<button type="button" class="btn btn-secondary btn-lg btn-block">Block level button inside container class</button>
+	</div>
+
+
+	<h1>Active state</h1>
+	<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Primary link</a>
+	<a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Link</a>
+
 	<p class="h1">h1. Bootstrap heading</p>
 	<p class="h2">h2. Bootstrap heading</p>
 	<p class="h3">h3. Bootstrap heading</p>
 	<p class="h4">h4. Bootstrap heading</p>
 	<p class="h5">h5. Bootstrap heading</p>
 	<p class="h6">h6. Bootstrap heading</p>
+
+
+
 
 
 	<h3>
@@ -275,6 +310,68 @@
 			</tr>
 		</tbody>
 	</table>
+
+
+	<h1>Example heading <span class="badge badge-secondary">New</span></h1>
+	<h2>Example heading <span class="badge badge-primary">New</span></h2>
+	<h3>Example heading <span class="badge badge-warning">New</span></h3>
+	<h4>Example heading <span class="badge badge-info">New</span></h4>
+	<h5>Example heading <span class="badge badge-secondary">New</span></h5>
+	<h6>Example heading <span class="badge badge-secondary">New</span></h6>
+
+
+	Button tags
+	The .btn classes are designed to be used with the <button> element. However, you can also use these classes on <a> or <input> elements (though some browsers may apply a slightly different rendering).
+
+	When using button classes on <a> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a role="button" to appropriately convey their purpose to assistive technologies such as screen readers.
+
+	<a class="btn btn-primary" href="#" role="button">Link</a>
+	<button class="btn btn-primary" type="submit">Button</button>
+	<input class="btn btn-primary" type="button" value="Input">
+	<input class="btn btn-primary" type="submit" value="Submit">
+	<input class="btn btn-primary" type="reset" value="Reset">
+
+
+	<button type="button" class="btn btn-primary">
+		Notifications <span class="badge badge-light">4</span>
+	</button>
+
+	<div class="container">	
+		<br>
+		<span class="badge badge-pill badge-primary">Primary</span>
+		<span class="badge badge-pill badge-secondary">Secondary</span>
+		<span class="badge badge-pill badge-success">Success</span>
+		<span class="badge badge-pill badge-danger">Danger</span>
+		<span class="badge badge-pill badge-warning">Warning</span>
+		<span class="badge badge-pill badge-info">Info</span>
+		<span class="badge badge-pill badge-light">Light</span>
+		<span class="badge badge-pill badge-dark">Dark</span>
+	</div>
+
+
+
+	<h1>Breadcrumbs</h1>
+
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item active" aria-current="page">Home</li>
+		</ol>
+	</nav>
+
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Home</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Library</li>
+		</ol>
+	</nav>
+
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Home</a></li>
+			<li class="breadcrumb-item"><a href="#">Library</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Data</li>
+		</ol>
+	</nav>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
